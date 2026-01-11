@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Users, Trophy, Camera, MessageSquare, Award, TrendingUp } from 'lucide-react'
+import { Users, Trophy, MessageSquare, Award } from 'lucide-react'
 
 const events = [
   {

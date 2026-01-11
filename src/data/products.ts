@@ -1,4 +1,4 @@
-import { Crown, Shield, Sword, Zap, Coins, Key, Ticket, Unlock, Lock } from 'lucide-react'
+import { Crown, Shield, Sword, Zap, Coins, Key, Ticket, Unlock } from 'lucide-react'
 
 export type ProductCategory = 'ranks' | 'currencies' | 'access' | 'keys' | 'services'
 

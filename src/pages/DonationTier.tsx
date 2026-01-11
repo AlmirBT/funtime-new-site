@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { ArrowLeft, Crown, Sparkles, Zap, Check, ShoppingCart, Shield, Users, Zap as ZapIcon } from 'lucide-react'
+import { ArrowLeft, Crown, Sparkles, Zap, Check, ShoppingCart, Shield } from 'lucide-react'
 
 const tierData: Record<string, any> = {
   elite: {
