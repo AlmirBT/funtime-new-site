@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-dark-300;
+  }
+  
+  body {
+    @apply bg-dark-50 text-white antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  ::selection {
+    @apply bg-blood-600 text-white;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-dark-100;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-blood-600 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-blood-500;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .glass {
+    @apply bg-dark-200/80 backdrop-blur-xl border border-dark-400/50;
+  }
+
+  .glass-strong {
+    @apply bg-dark-300/90 backdrop-blur-2xl border border-blood-600/40;
+  }
+
+  .glow-red {
+    box-shadow: 0 0 25px rgba(255, 26, 26, 0.5), 0 0 50px rgba(255, 26, 26, 0.3), 0 0 75px rgba(255, 26, 26, 0.15);
+  }
+
+  .glow-red-strong {
+    box-shadow: 0 0 40px rgba(255, 51, 51, 0.7), 0 0 80px rgba(255, 51, 51, 0.4), 0 0 120px rgba(255, 51, 51, 0.2);
+  }
+
+  .red-gradient {
+    background: linear-gradient(135deg, rgba(255, 26, 26, 0.15) 0%, rgba(204, 0, 0, 0.08) 100%);
+  }
+
+  .red-gradient-strong {
+    background: linear-gradient(135deg, rgba(255, 51, 51, 0.25) 0%, rgba(255, 26, 26, 0.15) 100%);
+  }
+}
